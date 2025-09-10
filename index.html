@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>DBVisuals – Video Editing</title>
 <style>
+  html { scroll-behavior: smooth; }
   body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #0d1b2a; color: #cce6ff;}
   header { background: #112240; padding: 20px; text-align: center;}
   header h1 { margin: 0; color: #66b2ff;}
@@ -12,8 +13,9 @@
   nav a:hover { color: #66b2ff; }
   section { padding: 60px 20px; text-align: center;}
   .portfolio { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;}
-  .portfolio div { background: #112240; padding: 20px; width: 250px; border-radius: 12px; transition: transform 0.3s;}
+  .portfolio div { background: #112240; padding: 10px; width: 250px; border-radius: 12px; transition: transform 0.3s;}
   .portfolio div:hover { transform: scale(1.05);}
+  .portfolio img { width: 100%; border-radius: 12px;}
   button { background: #66b2ff; border: none; padding: 12px 24px; color: #0d1b2a; cursor: pointer; border-radius: 6px; transition: background 0.3s;}
   button:hover { background: #99ccff; }
   input, textarea { width: 100%; padding: 10px; margin: 5px 0; background: #112240; border: none; color: #cce6ff; border-radius: 6px;}
@@ -40,10 +42,10 @@
 <section id="portfolio">
   <h2>Portfolio</h2>
   <div class="portfolio">
-    <div>Video 1 Thumbnail</div>
-    <div>Video 2 Thumbnail</div>
-    <div>Video 3 Thumbnail</div>
-    <div>Video 4 Thumbnail</div>
+    <div><img src="https://i.imgur.com/1.jpg" alt="Video 1"></div>
+    <div><img src="https://i.imgur.com/2.jpg" alt="Video 2"></div>
+    <div><img src="https://i.imgur.com/3.jpg" alt="Video 3"></div>
+    <div><img src="https://i.imgur.com/4.jpg" alt="Video 4"></div>
   </div>
 </section>
 
@@ -56,7 +58,8 @@
 
 <section id="contact">
   <h2>Contact</h2>
-  <form action="mailto:dbvisuals4l@gmail.com" method="post" enctype="text/plain">
+  <!-- Replace YOUR_FORMSPREE_ID with your actual Formspree ID -->
+  <form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
     <input type="text" name="name" placeholder="Your Name" required>
     <input type="email" name="email" placeholder="Your Email" required>
     <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
