@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DBVisuals – Video Editing</title>
+<style>
+  body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #121212; color: #fff;}
+  header { background: #1f1f1f; padding: 20px; text-align: center;}
+  header h1 { margin: 0; color: #ff6600;}
+  nav a { color: #fff; margin: 0 10px; text-decoration: none; transition: color 0.3s;}
+  nav a:hover { color: #ff9900; }
+  section { padding: 60px 20px; text-align: center;}
+  .portfolio { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;}
+  .portfolio div { background: #222; padding: 20px; width: 250px; border-radius: 12px; transition: transform 0.3s;}
+  .portfolio div:hover { transform: scale(1.05);}
+  button { background: #ff6600; border: none; padding: 12px 24px; color: #fff; cursor: pointer; border-radius: 6px; transition: background 0.3s;}
+  button:hover { background: #ff9900; }
+  input, textarea { width: 100%; padding: 10px; margin: 5px 0; background: #222; border: none; color: #fff; border-radius: 6px;}
+  footer { background: #1f1f1f; text-align: center; padding: 20px; margin-top: 40px;}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>DBVisuals</h1>
+  <nav>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="hero">
+  <h2>Professional Video Editing</h2>
+  <p>Short & Long Videos | DaVinci Resolve & CapCut</p>
+  <button onclick="document.getElementById('contact').scrollIntoView()">Request a Quote</button>
+</section>
+
+<section id="portfolio">
+  <h2>Portfolio</h2>
+  <div class="portfolio">
+    <div>Video 1 Thumbnail</div>
+    <div>Video 2 Thumbnail</div>
+    <div>Video 3 Thumbnail</div>
+    <div>Video 4 Thumbnail</div>
+  </div>
+</section>
+
+<section id="services">
+  <h2>Services & Pricing</h2>
+  <p><strong>Short Videos (up to 1 min):</strong> $10–$15</p>
+  <p><strong>Long Videos (5–10 min):</strong> $25–$40</p>
+  <p>Custom packages available for bigger projects</p>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <form action="mailto:dbvisuals4l@gmail.com" method="post" enctype="text/plain">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  &copy; 2025 DBVisuals
+</footer>
+
+</body>
+</html>
